@@ -23,8 +23,7 @@ contract FundraiserFactory {
         image,
         description,
         goalAmount,
-        beneficiary,
-        msg.sender
+        beneficiary
         );
         _fundraisers.push(fundraiser);
         emit FundraiserCreated(fundraiser, msg.sender);
